@@ -1,0 +1,50 @@
+[
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+        "name": "ULTRABOOST",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "age": "20-25",
+        "timeRequired": 10,
+        "img": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+      },
+      {
+        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+        "name": "LUNAR TRABOOST",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "age": "20-25",
+        "timeRequired": 20,
+        "img": "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+      },
+      {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "name": "SUPERNOVA ANGEL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "age": "20-25",
+        "timeRequired": 30,
+        "img": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+      },
+      {
+        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+        "name": "LITE RACER",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "age": "20-25",
+        "timeRequired": 40,
+        "img": "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+      },
+      {
+        "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+        "name": "4DFWD",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "age": "20-25",
+        "timeRequired": 50,
+        "img": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+      },
+      {
+        "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+        "name": "KAPTIR",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "age": "20-25",
+        "timeRequired": 60,
+        "img": "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+      }
+]
