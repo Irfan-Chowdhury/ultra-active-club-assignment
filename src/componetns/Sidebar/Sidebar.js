@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Sidebar = () => {
+const Sidebar = ({cart}) => {
+
+    let excerciseTime = 0;
+    if (cart.length>0) {
+        cart.forEach(element => {
+            excerciseTime += element.timeRequired;
+        });
+    }
+
 
     const showToastMessage = () => {
         toast.success('Success Notification !', {
@@ -12,7 +20,7 @@ const Sidebar = () => {
     };
 
     return (
-        <div>
+        <div className='sidebar'>
             {/* My Profile */}
             <section className='mt-4 d-flex flex-row bd-highlight mb-3'>
                 <div className="p-2">
@@ -51,7 +59,7 @@ const Sidebar = () => {
                         <span><b>Excercise Time</b></span>
                     </div>
                     <div>
-                        <span className='fw-light'>2000 Seconds</span>
+                        <span className='fw-light'>{excerciseTime} Seconds</span>
                     </div>
                 </div>
             </section>
@@ -62,7 +70,7 @@ const Sidebar = () => {
                         <span><b>Break Time</b></span>
                     </div>
                     <div>
-                        <span className='fw-light'>15 Seconds</span>
+                        <span className='fw-light'>{cart.length} Seconds</span>
                     </div>
                 </div>
             </section>

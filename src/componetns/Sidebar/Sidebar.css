@@ -29,3 +29,8 @@
     margin-top: 8px;
     color: #fff;
 }
+
+.sidebar{
+    position: sticky;
+    top: 0;
+}
