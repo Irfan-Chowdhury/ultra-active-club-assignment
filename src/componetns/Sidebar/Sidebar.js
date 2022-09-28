@@ -1,15 +1,15 @@
 import React from 'react';
 import './Sidebar.css';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Sidebar = () => {
 
-    // const showToastMessage = () => {
-    //     toast.success('Success Notification !', {
-    //         position: toast.POSITION.TOP_RIGHT
-    //     });
-    // };
+    const showToastMessage = () => {
+        toast.success('Success Notification !', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    };
 
     return (
         <div>
@@ -68,10 +68,10 @@ const Sidebar = () => {
             </section>
 
             <br />
-            {/* <div className="d-grid gap-2">
+            <div className="d-grid gap-2">
                 <button className="btn btn-primary" onClick={showToastMessage}>Activity Completed</button>
                 <ToastContainer />
-            </div> */}
+            </div>
 
            
         </div>
