@@ -12,12 +12,23 @@ const Sidebar = ({cart}) => {
         });
     }
 
-
     const showToastMessage = () => {
         toast.success('Success Notification !', {
             position: toast.POSITION.TOP_RIGHT
         });
     };
+
+
+    let value = parseInt(localStorage.getItem('break-time'));
+    let [breaktime, setBreaktime] = useState(value ? value : 0); 
+    const handleOnClick = (event) => {
+        let numberString = event.currentTarget.textContent;
+        numberString = numberString.replace("s", "");
+        breaktime = parseInt(numberString);
+        setBreaktime(breaktime)
+        localStorage.setItem('break-time',breaktime);
+    };
+
 
     return (
         <div className='sidebar'>
@@ -43,11 +54,11 @@ const Sidebar = ({cart}) => {
             <p className='text-start'><b>Add A Break</b></p> <hr />
 
             <section className="d-flex justify-content-evenly" style={{backgroundColor:"#F2F3FB"}}>
-                <div className='second'><p><b>10s</b></p></div>
-                <div className='seconds-effect'><p><b>20s</b></p></div>
-                <div className='second'><p><b>30s</b></p></div>
-                <div className='second'><p><b>40s</b></p></div>
-                <div className='second'><p><b>50s</b></p></div>
+                <div className={breaktime===10?'seconds-effect':'seconds'}><p><b> <button onClick={handleOnClick}><span>10</span>s</button></b></p></div>
+                <div className={breaktime===20?'seconds-effect':'seconds'}><p><b><button onClick={handleOnClick}><span>20</span>s</button></b></p></div>
+                <div className={breaktime===30?'seconds-effect':'seconds'}><p><b><button onClick={handleOnClick}><span>30</span>s</button></b></p></div>
+                <div className={breaktime===40?'seconds-effect':'seconds'}><p><b><button onClick={handleOnClick}><span>40</span>s</button></b></p></div>
+                <div className={breaktime===50?'seconds-effect':'seconds'}><p><b><button onClick={handleOnClick}><span>50</span>s</button></b></p></div>
             </section>
 
             {/* Excercise Details */}
@@ -70,7 +81,7 @@ const Sidebar = ({cart}) => {
                         <span><b>Break Time</b></span>
                     </div>
                     <div>
-                        <span className='fw-light'>{cart.length} Seconds</span>
+                        <span className='fw-light'>{breaktime} Seconds</span>
                     </div>
                 </div>
             </section>

@@ -1,8 +1,13 @@
+.sidebar{
+    position: sticky;
+    top: 0;
+}
+
 .profile-img{
     height: 50px;
 }
 
-.second{
+.seconds{
     margin-top: 10px;
     margin-bottom: 10px;
     padding:'5px';
@@ -12,9 +17,16 @@
     height: 45px;
 }
 
-.second p{
+.seconds p{
     margin-top: 8px;
 }
+
+.seconds button{
+    border: none;
+    background: #fff;
+}
+
+
 
 .seconds-effect{
     margin-top: 10px;
@@ -30,7 +42,9 @@
     color: #fff;
 }
 
-.sidebar{
-    position: sticky;
-    top: 0;
+.seconds-effect button{
+    border: none;
+    background: blue;
+    color: #fff;
 }
+
