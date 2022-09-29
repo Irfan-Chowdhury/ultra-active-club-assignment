@@ -14,8 +14,6 @@ const Club = () => {
     const [cardLists, setCardList] = useState([]); 
 
     const [cart, setCart] = useState([]); 
-    // let [excerciseTime, setExcerciseTime] = useState(0); 
-
 
     const handleAddToCart = (data) =>{
         const newCart = [...cart, data];
@@ -28,7 +26,7 @@ const Club = () => {
                 <div className="col-md-9" style={{backgroundColor:"#F2F3FB"}}>
                     <CardList cardLists={cardLists} handleAddToCart = {handleAddToCart}></CardList>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3" style={{backgroundColor:"#FFFFFF"}}>
                     <Sidebar cart={cart}></Sidebar>
                 </div>
             </div>

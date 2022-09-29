@@ -31,7 +31,7 @@ const Sidebar = ({cart}) => {
 
 
     return (
-        <div className='sidebar'>
+        <div className='sidebar mb-3'>
             {/* My Profile */}
             <section className='mt-4 d-flex flex-row bd-highlight mb-3'>
                 <div className="p-2">

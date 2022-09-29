@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Card = ({cardList,handleAddToCart}) => {
     const {name, description, age, timeRequired, img } = cardList;
@@ -13,7 +13,7 @@ const Card = ({cardList,handleAddToCart}) => {
                     <p className="card-text">For Age: {age}</p>
                     <p className="card-text">Time Required: {timeRequired}s</p>
                     <div className="text-center d-grid gap-2">
-                        <button className='btn btn-primary' onClick={() => handleAddToCart(cardList)}>Add To List</button>
+                        <button className='btn btn-info' onClick={() => handleAddToCart(cardList)}>Add To List</button>
                     </div>
                 </div>
             </div>
